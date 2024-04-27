@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- nav section starts here -->
+    <nav>
+      <img
+        class="nav-logo"
+        src="data:image/png;base64,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"
+        alt=""
+      />
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#">Accomplishments</a>
+        <a href="#">Contact us</a>
+      </div>
+    </nav>
+    <!-- nav section starts here -->
+
+    <!-- about section starts here -->
+    <section id="about">
+      <div id="about-section">
+        <h1>WELCOME</h1>
+        <p class="paragraph">
+          Good day, my name is Mishael and i'm the creator of this small website
+          for a project im currently doing.
+        </p>
+        <p class="paragraph">
+          Passionate and dedicated web developer with [X] years of experience
+          crafting exceptional digital experiences. Proficient in front-end and
+          back-end development, I thrive on turning ideas into dynamic,
+          user-friendly websites and web applications.
+        </p>
+        <p class="paragraph">THE END I GUESS...</p>
+      </div>
+      <img
+        class="my-profile-picture"
+        src="IMG-20240302-WA0007.jpeg"
+        alt="My-picture"
+      />
+    </section>
+    <!-- about section ends here -->
+
+    <!-- projection starts here -->
+    <section id="projects">
+      <h2>My projects</h2>
+      <section class="project-container">
+        <!-- single project card -->
+        <div class="project-card">
+          <img
+            class="project-image"
+            src="https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17-1536x922.jpg"
+            alt=""
+          />
+          <div class="project-description">
+            <h3>The MAXI Project</h3>
+            <p class="paragraph">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+              doloremque vel sed quaerat dolorum error eius aliquam inventore
+              libero quam exercitationem totam, eum temporibus placeat
+              recusandae maiores numquam. Saepe, eos?
+            </p>
+          </div>
+        </div>
+        <!-- project card ends here -->
+        <!-- single project card -->
+        <div class="project-card">
+          <img
+            class="project-image"
+            src="https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17-1536x922.jpg"
+            alt=""
+          />
+          <div class="project-description">
+            <h3>The MAXI Project</h3>
+            <p class="paragraph">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+              doloremque vel sed quaerat dolorum error eius aliquam inventore
+              libero quam exercitationem totam, eum temporibus placeat
+              recusandae maiores numquam. Saepe, eos?
+            </p>
+          </div>
+        </div>
+        <!-- project card ends here --><!-- single project card -->
+        <div class="project-card">
+          <img
+            class="project-image"
+            src="https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17-1536x922.jpg"
+            alt=""
+          />
+          <div class="project-description">
+            <h3>The MAXI Project</h3>
+            <p class="paragraph">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+              doloremque vel sed quaerat dolorum error eius aliquam inventore
+              libero quam exercitationem totam, eum temporibus placeat
+              recusandae maiores numquam. Saepe, eos?
+            </p>
+          </div>
+        </div>
+        <!-- project card ends here --><!-- single project card -->
+        <div class="project-card">
+          <img
+            class="project-image"
+            src="https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17-1536x922.jpg"
+            alt=""
+          />
+          <div class="project-description">
+            <h3>The MAXI Project</h3>
+            <p class="paragraph">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+              doloremque vel sed quaerat dolorum error eius aliquam inventore
+              libero quam exercitationem totam, eum temporibus placeat
+              recusandae maiores numquam. Saepe, eos?
+            </p>
+          </div>
+        </div>
+        <!-- project card ends here -->
+      </section>
+    </section>
+  </body>
+</html>

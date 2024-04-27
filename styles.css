@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* nav style starts here */
+nav {
+  background-color: brown;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+/* nav style ends here */
+
+/* about style starts here */
+#about {
+  display: flex;
+  margin-top: 2rem;
+  gap: 3rem;
+  align-items: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.my-profile-picture {
+  width: 300px;
+  border-radius: 5rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.paragraph {
+  color: gray;
+  margin-top: 0.5rem;
+}
+/* about style ends here */
+
+/* projects style begins here */
+
+#projects {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-container {
+  display: flex;
+  gap: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.project-card {
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.project-description {
+  padding: 1rem;
+}
